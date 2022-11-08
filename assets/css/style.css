@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: rgb(26, 25, 25);
-  background-image: linear-gradient(to right, rgba(30, 67, 86, 0.508), rgba(37, 104, 137, 0.525)), url("../img/herobg.jpg");
+  background-image: linear-gradient(to right, rgba(30, 67, 86, 0.508), rgba(6, 67, 97, 0.525)), url("../img/herobg.jpg");
   background-size: 100% 100%;
 }
 
