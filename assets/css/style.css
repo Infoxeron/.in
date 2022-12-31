@@ -1,7 +1,7 @@
 body {
-  font-family: "bold", Ranelte Norm;
   color: #fff;
-  background-color: black; 
+  background-color: rgb(27, 27, 27); 
+  cursor:default;
   background-size: 100% 100%;
 }
 
@@ -15,15 +15,21 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, .font-primary {
+h1, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", Ranelte Norm;;
 }
+h2{
+  font-family: 'Perpetua Titling MT';
+  font-style:italic;
+  font-weight:lighter;
+  font-size: 74px;
 
+}
 #animation{
   margin-bottom: 60px;
     animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
-}
+
 
 .carousel-container img{width:100px; height: auto;}
 
@@ -300,7 +306,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 90vh;
   overflow: hidden;
   position: relative;
+  padding-top: 14%;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------       
@@ -348,12 +356,91 @@ hero .carousel-container {
   border-radius: 10px;
   box-shadow: 2px 2px 50px rgba(160, 148, 148, 0.656);
 }
+
+.box_1{
+  box-sizing: border-box;
+  position: absolute;
+  width: 480px;
+  height: 260px;
+  left: 740px;
+  top: -5%;
+  background: radial-gradient(100% 299.2% at 3.59% 3.24%, rgba(147, 153, 211, 0.49) 0%, rgba(40, 53, 97, 0.07) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 2.39899px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 9px 21px rgba(0, 0, 0, 0.25), 11px -11px 23px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14.3939px);
+  /*  backdrop-filter */
+  border-radius: 14.98px;
+  transform: rotate(-89.47deg);
+}
+/*.box_2{
+  box-sizing: border-box;
+  position: absolute;
+  width: 480px;
+  height: 260px;
+  left: 45%;
+  top: -20%;
+  background: radial-gradient(100% 299.2% at 3.59% 3.24%, rgba(147, 153, 211, 0.49) 0%, rgba(40, 53, 97, 0.07) 100%) ;
+  border: 2.39899px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 9px 21px rgba(0, 0, 0, 0.25), 11px -11px 23px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14.3939px);
+  
+  /* backdrop-filter  */
+  /*border-radius: 14.98px;
+  transform: rotate(-89.47deg);
+}*/
+.home_mg{
+  position: absolute;
+  width: 936px;
+  height: 541px;
+  left: 20%;
+  top: -48%;
+  mix-blend-mode: overlay;
+}
+.box_3{
+  box-sizing: border-box;
+  position: absolute;
+  width: 98.6px;
+  height: 216.65px;
+  left: 58%;
+  top: 21%;
+  background: radial-gradient(100% 299.2% at 3.59% 3.24%, rgba(147, 153, 211, 0.49) 0%, rgba(40, 53, 97, 0.07) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 2.39899px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 9px 21px rgba(0, 0, 0, 0.25), 11px -11px 23px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14.3939px);
+ 
+  /*  backdrop-filter */
+  
+  border-radius: 14.98px;
+  transform: matrix(0.03, -1, 1, 0, 0, 0);
+}
+
+.head_mg {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+.home_mg {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
+
+
+
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 48px;
-  font-weight: 700;
+  font-weight:lighter;
 }
 #hero p {
   width: 100%;
@@ -506,6 +593,7 @@ hero .carousel-container {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
+  
 }
 
 .section-bg {
@@ -609,6 +697,7 @@ section {
 .services {
   padding-bottom: 20px;
   
+  
 }
 .services .icon-box {
   padding: 30px;
@@ -619,11 +708,23 @@ section {
   box-shadow: 0 5px 26px 0 rgba(218, 220, 227, 0.359);
   transition: all 0.3s ease-in-out;
   text-align: center;
-  /*border: 1px solid #fff;*/
+  /*border: 1px solid #fff;
   background-color: #333;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  border-radius: 7px;
+  border-radius: 7px;*/
+
+  /*glassmorphism*/
+
+  /*background: rgba(217, 217, 217, 0.1);
+  box-shadow: inset 116.5px -116.5px 116.5px rgba(165, 165, 165, 0.1), inset -116.5px 116.5px 116.5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(116.5px);*/
+
+  /*neomorphism*/
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .services .icon {
   margin: 0 auto 20px auto;
@@ -1005,6 +1106,17 @@ section {
   padding: 0 30px;
   margin-bottom: 60px;
   position: relative;
+   /*glassmorphism*/
+
+  /*background: rgba(217, 217, 217, 0.1);
+  box-shadow: inset 116.5px -116.5px 116.5px rgba(165, 165, 165, 0.1), inset -116.5px 116.5px 116.5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(116.5px);*/
+
+  /*neomorphism*/
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .service-details .card-img {
   width: calc(100% + 60px);
@@ -1020,11 +1132,16 @@ section {
 .service-details .card-body {
   z-index: 10;
   background: #fff;
-  border-top: 4px solid #fff;
+  border-top: 4px solid rgb(155, 148, 148);
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-top: -60px;
   transition: 0.3s;
+  /*neomorphism*/
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .service-details .card-title {
   font-weight: 700;
@@ -1032,11 +1149,11 @@ section {
   margin-bottom: 20px;
 }
 .service-details .card-title a {
-  color: #1e4356;
+  color: #bebebf;
   transition: 0.3s;
 }
 .service-details .card-text {
-  color: #5e5e5e;
+  color: #8a8686;
 }
 .service-details .read-more a {
   color: #777777;
@@ -1192,6 +1309,17 @@ section {
   position: relative;
   border-radius: 4px;
   margin: 0 0 30px 0;
+  /*neomorphism*/
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(50, 50, 50, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
+
+   /*glassmorphism*/
+
+  /*background: rgba(217, 217, 217, 0.1);
+  box-shadow: inset 116.5px -116.5px 116.5px rgba(165, 165, 165, 0.1), inset -116.5px 116.5px 116.5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(116.5px);*/
 }
 .portfolio .portfolio-item img {
   transition: all 0.3s ease-in-out;
@@ -1291,8 +1419,18 @@ section {
   padding: 30px;
   border-radius: 5px;
   transition: 0.5s;
+
+  /* glassmorphism
+  background: rgba(217, 217, 217, 0.1);
+  box-shadow: inset 116.5px -116.5px 116.5px rgba(165, 165, 165, 0.1), inset -116.5px 116.5px 116.5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(116.5px); */
   
-  
+
+  /*neomorphism*/
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(25, 25, 25, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .team .member .pic {
   overflow: hidden;
@@ -1371,13 +1509,17 @@ section {
 # Contact--------------------------------------------*/
 .contact {
   padding-bottom: 30px;
+  
 }
 .contact .info-box {
   color: #444;
   text-align: center;
-  box-shadow: 0 0 7px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
   margin-bottom: 30px;
+
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .contact .info-box i {
   font-size: 32px;
@@ -1403,6 +1545,9 @@ section {
   box-shadow: 0 0 7px rgba(214, 215, 216, 0.6);
   padding: 30px;
   margin-bottom: 30px;
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .contact .php-email-form .error-message {
   display: none;
@@ -1445,6 +1590,9 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 15px;
 }
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
   background-color: #68A4C4;
@@ -1465,11 +1613,14 @@ section {
 
 }
 .contact .php-email-form button[type=submit] {
-  background:#c41f2e; 
+
   border: 0;
-  padding: 10px 24px;
+  padding: 15px 20px;
   color: #fff;
   transition: 0.4s;
+  background: linear-gradient(135deg, #212121 0%, #1D1D1D 100%);
+  box-shadow: -38px 38px 76px rgba(12, 12, 12, 0.2), 38px -38px 76px rgba(12, 12, 12, 0.2), -38px -38px 76px rgba(35, 35, 35, 0.9), 38px 38px 95px rgba(12, 12, 12, 0.9), inset 2px 2px 3px rgba(50, 50, 50, 0.3), inset -2px -2px 3px rgba(12, 12, 12, 0.5);
+  border-radius: 21px;
 }
 .contact .php-email-form button[type=submit]:hover {
   background: #8f000d;
@@ -1927,6 +2078,7 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -2099,3 +2251,9 @@ div#preloader {
   background: #3EC1D5;
   text-shadow: none;
 }
+
+/*parallex*/
+
+
+
+
