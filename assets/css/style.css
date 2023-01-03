@@ -1,4 +1,4 @@
- body {
+body {
   color: #fff;
   background-color: rgb(27, 27, 27); 
   cursor:default;
@@ -97,7 +97,7 @@ h1, h3,h4, h5, h6, .font-primary {
 
 
 #main {
-  margin-top: 80px;
+  margin-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -431,7 +431,7 @@ hero .carousel-container {
 #hero h2 {
   color: rgba(255, 255, 255, 0.723);
   margin-bottom: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
   font-size: 71px;
   font-weight:lighter;
   font-family: 'Perpetua Titling MT';
@@ -692,6 +692,7 @@ section {
 --------------------------------------------------------------*/
 .services {
   padding-bottom: 20px;
+  padding-top: 140px;
   
   
 }
@@ -2248,8 +2249,56 @@ div#preloader {
   text-shadow: none;
 }
 
-/*parallex*/
 
 
 
+/*text horizontal*/
 
+#horizontal-text{
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
+
+
+.skills, .langs {
+  text-transform:uppercase;
+  font-size:70px;
+  display: inline-block;
+  white-space: nowrap;
+  
+  padding-left: 100%; /*Initial offset, which places the text off-screen*/
+  color: rgba(197, 194, 194, 0.875);
+  
+  
+}
+.langs h1{
+  font-size: 60px;
+  
+  animation: floatText 25s infinite linear;
+  font-weight: bolder;
+  color: rgb(218, 7, 7);
+  -webkit-text-fill-color: rgb(27, 27, 27); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 12, 12);
+}
+.skills h1{
+  font-family: 'Perpetua Titling MT';
+  font-size: 70px;
+  animation: floatText 35s infinite linear;
+  
+}
+
+
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.skills:hover, .langs:hover  {
+  animation-play-state: paused;
+}
