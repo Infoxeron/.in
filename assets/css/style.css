@@ -1,8 +1,9 @@
 body {
   color: #fff;
   background-color: rgb(27, 27, 27); 
-  cursor:default;
+  cursor:none;
   background-size: 100% 100%;
+
 }
 
 a {
@@ -389,6 +390,22 @@ hero .carousel-container {
   top: -45%;
   mix-blend-mode: overlay;
 }
+
+@media (max-width: 768px) {
+
+  .home_mg{
+    top: -113px;
+    left: -146px;
+  }
+  
+}
+@media (max-width: 575px) {
+  .home_mg{
+    top: -117px;
+    left: -242px;
+  }
+}
+
 .box_3{
   box-sizing: border-box;
   position: absolute;
@@ -500,11 +517,17 @@ hero .carousel-container {
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%) translateY(20px) rotate(4deg);
   }
+  #hero h2 {
+    padding-top: 120px;
+    font-size: 60px;
+    margin-left: 22px;
+  }
 }
 @media (max-width: 575px) {
   #hero h2 {
-    font-size: 30px;
-    margin-left: 10px;
+    padding-top: 120px;
+    font-size: 40px;
+    margin-left: 22px;
   }
   #hero p {
     margin-left: 9px;
@@ -690,6 +713,8 @@ section {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
+
+
 .services {
   padding-bottom: 20px;
   padding-top: 140px;
@@ -759,6 +784,9 @@ section {
   background-color: #333; 
   
 }
+
+
+
 .services .icon-box-cyan .icon {
   background: black;
 }
@@ -785,6 +813,7 @@ section {
 }
 .services .icon-box-blue:hover {
   background-color: #333;
+
 }
 
 /*--------------------------------------------------------------
@@ -1592,7 +1621,7 @@ section {
   border-radius: 15px;
 }
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #68A4C4;
+  background-color: #ec0a0a;
 }
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -2302,3 +2331,34 @@ div#preloader {
 .skills:hover, .langs:hover  {
   animation-play-state: paused;
 }
+
+
+
+/*cursor*/
+
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff0000;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(205, 16, 16, 0.5);
+}
+
+
