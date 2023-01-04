@@ -391,20 +391,20 @@ hero .carousel-container {
   mix-blend-mode: overlay;
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .home_mg{
     top: -113px;
-    left: -146px;
+    left: 146px;
   }
   
 }
 @media (max-width: 575px) {
   .home_mg{
     top: -117px;
-    left: -242px;
+    left: 242px;
   }
-}*/
+}
 
 .box_3{
   box-sizing: border-box;
