@@ -391,7 +391,7 @@ hero .carousel-container {
   mix-blend-mode: overlay;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
   .home_mg{
     top: -113px;
@@ -404,7 +404,7 @@ hero .carousel-container {
     top: -117px;
     left: -242px;
   }
-}
+}*/
 
 .box_3{
   box-sizing: border-box;
